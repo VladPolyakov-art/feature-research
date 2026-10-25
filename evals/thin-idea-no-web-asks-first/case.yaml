@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: thin-idea-no-web-asks-first
+expected_outcome: |
+  The idea is one line and the folder holds only a bare package.json, so the product, its users and the reason for the feature are unknown. The agent looks at the folder, finds no product context, and asks 3-5 clarifying questions in one message (what the product is and who uses it, who asked for the feature and why, how people cope today, constraints, competitors in mind). It also says that web research tools are not available in this session and names the fallback (the user pastes links or exports, or it works from model knowledge with competitor claims marked unverified, or it prepares a prompt for an external research tool). It does not write a report, and it does not present any competitor features, numbers or market sizes as facts.
+context:
+  scaffold_script: place-files.sh
